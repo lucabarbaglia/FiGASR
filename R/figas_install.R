@@ -1,4 +1,4 @@
-#' Set-up environment to run Fine-Grained Aspect-based Sentiment analysis. This is a one-time operation, that should be run when you install the FiGAS package, keeping all arguments to their default values.
+#' Set-up environment to run Fine-Grained Aspect-based Sentiment analysis. This is a one-time operation, that should be run when you install the SentiBigNomicsR package, keeping all arguments to their default values.
 #' @importFrom reticulate py_versions_windows conda_binary conda_install
 #' @importFrom utils menu
 #' @param conda The path to a `conda` executable (argument in `reticulate`). Use `"auto"` to
@@ -14,7 +14,7 @@
 #' @seealso \code{\link{get_sentiment}} to compute sentiment.
 #' @examples
 #' ## Compute the economic sentiment from two texts about two tokens of interest, namely "unemployment" and "economy".
-#' library(FiGAS)
+#' library(SentiBigNomicsR)
 #' figas_install()
 #' text <- list("Unemployment is rising at high speed", "The economy is slowing down and unemployment is booming")
 #' include = list("unemployment", "economy")
