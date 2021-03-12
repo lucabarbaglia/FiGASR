@@ -1,0 +1,21 @@
+Package: SentiBigNomicsR
+Type: Package
+Title: SentiBigNomics Fine-Grained Aspect-based Sentiment analysis in R
+Version: 0.1.0
+Authors@R: c(
+    person("Arianna", "Galli", email = "", role = "aut"),
+    person("Luca", "Barbaglia", email = "luca.barbaglia@ec.europa.eu", role = c("cre", "aut")),
+    person("Sergio", "Consoli", email = "sergio.consoli@ec.europa.eu", role = "aut"),
+    person("Sebastiano", "Manzan", email = "sebastiano.manzan@baruch.cuny.edu", role = "aut"))
+Maintainer: Luca Barbaglia <luca.barbaglia@ec.europa.eu>
+Description: Compute fine-grained aspect-based sentiment analysi in R leveraging on cutting edge NLP techniques.
+Depends: R (>= 3.5.0)
+Imports: 
+    reticulate,
+    spacyr,
+    stats,
+    tibble
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
