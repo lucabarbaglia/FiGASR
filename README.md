@@ -3,9 +3,9 @@
 
 # Lexicon-based Sentiment Analysis for Economic and Financial Applications
 
-The `SentiBigNomicsR` package allows R users to leverage on
-cutting-hedge NLP techniques to easily run sentiment analysis on
-economic news content: this package is a wrapper of the
+The `FiGASR` package allows R users to leverage on cutting-hedge NLP
+techniques to easily run sentiment analysis on economic news content:
+this package is a wrapper of the
 [`SentiBigNomics`](https://github.com/sergioconsoli/SentiBigNomics)
 python package. Given a list of texts as input and a list of tokens of
 interest (ToI), the algorithm analyses the texts and compute the
@@ -18,24 +18,24 @@ sentiment only on that text, rather than the full article.
 
 The package includes some additional of features, like automatic
 negation handling, tense detection, location filtering and excluding
-some words from the sentiment computation. `SentiBigNomicsR` only
-supports English language, as it relies on the *en\_core\_web\_lg*
-language model from the `spaCy` Python module.
+some words from the sentiment computation. `FiGASR` only supports
+English language, as it relies on the *en\_core\_web\_lg* language model
+from the `spaCy` Python module.
 
 ## Installation
 
-You can install `SentiBigNomicsR` from GitHub as follows:
+You can install the package from GitHub as follows:
 
 ``` r
 install.packages("devtools")
-devtools::install_github("lucabarbaglia/SentiBigNomicsR")
+devtools::install_github("lucabarbaglia/FiGASR")
 ```
 
-If it is the first time that you are using `SentiBigNomicsR`, then set
-up the associated environment:
+If it is the first time that you are using `FiGASR`, then set up the
+associated environment:
 
 ``` r
-SentiBigNomicsR::figas_install()
+FiGASR::figas_install()
 ```
 
 ## A start-up example
@@ -45,7 +45,7 @@ tokens of interest, namely *unemployment* and *economy*, given the two
 following sentences.
 
 ``` r
-library(SentiBigNomicsR)
+library(FiGASR)
 text <- list("Unemployment is rising at high speed",
              "The economy is slowing down and unemployment is booming")
 include = list("unemployment", "economy")
@@ -94,9 +94,8 @@ additional features of the package: assume that we want to extract the
 sentiment about “economic activity” on the ECB Economic Bulletin
 releases in 2007-13 and excluding all sentences that relates to the
 “stock market”. The figure below plots the economic sentiment computed
-by `SentiBigNomicsR`, which timely identifies the recessionary period
-indicated by the shadowed area following the [EABCN business cycles
-reference
+by `FiGASR`, which timely identifies the recessionary period indicated
+by the shadowed area following the [EABCN business cycles reference
 dates](https://eabcn.org/dc/chronology-euro-area-business-cycles).
 
 ``` r
@@ -132,14 +131,14 @@ ecb_dates %>%
 
 ![](man/figures/README-ECB%20Economic%20Bulletin-1.png)<!-- -->
 
-The `SentiBigNomicsR` algorithm leverages on a set of semantic rules to
-identify the part of text that relates and characterize the token of
-interest. The argument `oss` allows to run a *naive* sentiment
-computation by assigning a score to each word in the text without the
-usage of semantic rules (i.e., overall sentiment score). The figure
-below shows the sentiment computed with the proposed algorithm (in blue)
-and in the naive way (in red): the former captures the recessionary
-period more **timely** and **accurately** than the latter.
+The `FiGASR` algorithm leverages on a set of semantic rules to identify
+the part of text that relates and characterize the token of interest.
+The argument `oss` allows to run a *naive* sentiment computation by
+assigning a score to each word in the text without the usage of semantic
+rules (i.e., overall sentiment score). The figure below shows the
+sentiment computed with the proposed algorithm (in blue) and in the
+naive way (in red): the former captures the recessionary period more
+**timely** and **accurately** than the latter.
 
 ``` r
 ## Overall sentiment score
@@ -149,12 +148,12 @@ ecb_sent_OSS      <- get_sentiment(text = text,
                               oss = TRUE)
 
 ecb_sent_comparison <- left_join(ecb_sent$sentiment, ecb_sent_OSS$sentiment, by="Doc_id")
-colnames(ecb_sent_comparison) <- c("Doc_id", "SentiBigNomicsR", "Naive")
+colnames(ecb_sent_comparison) <- c("Doc_id", "FiGASR", "Naive")
 
 ## Plot the time series of the average sentiment
 library(tidyr)
 cbind(ecb_sent_comparison, ecb_sub) %>%
-  gather(var, val, 'SentiBigNomicsR', Naive) %>%
+  gather(var, val, 'FiGASR', Naive) %>%
   ggplot(aes(x = Date, y = val, color=var, group=var)) +
   geom_line() +
   theme_bw() +
