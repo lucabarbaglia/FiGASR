@@ -1,6 +1,6 @@
 #' Sentiment of economic terms.
 #'
-#' A dataset containg the sentiment score for 7,295 economic terms.
+#' A dataset containg the sentiment score for 3,181 economic terms.
 #' The score is defined over [-1,1] and was obtained from combining
 #' human annotions from 10 US-based annotators.
 #'
@@ -8,7 +8,7 @@
 #'
 #' @usage data(senti_bignomics)
 #'
-#' @format A tibble with 7,295 rows and 2 variables:
+#' @format A tibble with 3,181 rows and 2 variables:
 #' \describe{
 #'   \item{term}{economic term}
 #'   \item{sentiment}{sentiment score defined over [-1,1]}
