@@ -153,8 +153,8 @@ figas_wrapper <- function(text=text, include=include, exclude=exclude, location=
   reticulate::py_run_string("import warnings")
   reticulate::py_run_string("warnings.simplefilter(action='ignore',category=FutureWarning)")
   # reticulate::py_run_file(file = system.file('python', 'senticnet5.py', package = 'FiGAS'), convert=TRUE)
-  reticulate::py_run_file(file = system.file('python', 'senti_bignomics.py', package = 'FiGAS'), convert=TRUE)
-  pc2 <- reticulate::import_from_path(module='package_creation2', path=system.file('python', package = 'FiGAS'), convert=TRUE)
+  reticulate::py_run_file(file = system.file('python', 'senti_bignomics.py', package = 'FiGASR'), convert=TRUE)
+  pc2 <- reticulate::import_from_path(module='package_creation2', path=system.file('python', package = 'FiGASR'), convert=TRUE)
 
   pcout <- pc2$WRAPPER(text=text, include=include, exclude=exclude, location=location, tense=tense, oss=oss)
 

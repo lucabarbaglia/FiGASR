@@ -1111,6 +1111,8 @@ def CheckLeapYear(year):
 def WRAPPER(text, include, exclude=None, location=None, tense=['past', 'present', 'future', 'NaN'], oss=False):
     # text = ['Today is a beautiful day', 'The economy is slowing down and it is a rainy day']
     # include = ['day', 'economy']
+    # text = ['Money supply is rising']
+    # include = ['money supply']
     # exclude=None 
     # location=None
     # tense=['past', 'present', 'future', 'NaN']
