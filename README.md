@@ -80,7 +80,7 @@ The first element of the output list provides the overall average
 sentiment score of each text, while the second provides the detailed
 score of each chunk of text that relates to one of the ToI.
 
-### US sentiment
+## US sentiment
 
 The daily sentiment indicators used for the US used in [Barbaglia et
 al. (2021)](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3698121)
