@@ -80,24 +80,27 @@ The first element of the output list provides the overall average
 sentiment score of each text, while the second provides the detailed
 score of each chunk of text that relates to one of the ToI.
 
+### US sentiment
+
+The daily sentiment indicators used for the US used in [Barbaglia et
+al. (2021)](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3698121)
+can be accessed with the command `data("US_sentiment")`. The figure
+below plots the economic sentiment indicators, which timely identifies
+the recessionary period indicated by the shadowed area following the
+[NBER business cycles reference
+dates](https://www.nber.org/cycles.html).
+
+<img src="man/figures/README-US sentiment-1.png" width="80%" />
+
 ## Citation:
 
 If you use this package, please *cite* the following references:
 
 <!-- ## References: -->
 
+  - Barbaglia, Consoli, Manzan (May 26, 2021). Forecasting with Economic
+    News. Available at SSRN: <https://ssrn.com/abstract=3698121>
+
   - Consoli, Barbaglia, Manzan (January 14, 2021). Fine-Grained
     Aspect-Based Sentiment Analysis on Economic and Financial Lexicon.
     Available at SSRN: <https://ssrn.com/abstract=3766194>
-
-  - Barbaglia, Consoli, Manzan (September 23, 2020). Forecasting with
-    Economic News. Available at SSRN:
-    <https://ssrn.com/abstract=3698121>
-
-  - Barbaglia, Consoli, Manzan (2020). Monitoring the Business Cycle
-    with Fine-Grained, Aspect-Based Sentiment Extraction from News. In:
-    Bitetta, Bordino, Ferretti, Gullo, Pascolutti, Ponti (eds) Mining
-    Data for Financial Applications. MIDAS 2019. Lecture Notes in
-    Computer Science, vol 11985. Springer.
-
-## Notes:
