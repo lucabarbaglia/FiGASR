@@ -106,6 +106,8 @@ If you use this package, please *cite* the following references:
 
 <!-- ## References: -->
 
-* Barbaglia, Consoli, Manzan (May 26, 2021). Forecasting with Economic News. Available at SSRN: https://ssrn.com/abstract=3698121
+* Barbaglia, Consoli, Manzan (May 26, 2021). Forecasting with Economic News. Available at SSRN: [https://ssrn.com/abstract=3698121](https://ssrn.com/abstract=3698121)
 
-* Consoli, Barbaglia, Manzan (January 14, 2021). Fine-Grained  Aspect-Based Sentiment Analysis on Economic and Financial Lexicon. Available at SSRN: https://ssrn.com/abstract=3766194
+* Barbaglia, Consoli, Manzan (September 1, 2021). Forecasting GDP in Europe with Textual Data. Available at SSRN: [https://ssrn.com/abstract=3898680](https://ssrn.com/abstract=3898680)
+
+* Consoli, Barbaglia, Manzan (January 14, 2021). Fine-Grained  Aspect-Based Sentiment Analysis on Economic and Financial Lexicon. Available at SSRN: [https://ssrn.com/abstract=3766194](https://ssrn.com/abstract=3766194)
