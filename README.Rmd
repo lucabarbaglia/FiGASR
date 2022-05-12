@@ -171,6 +171,20 @@ US_sentiment %>%
 
 
 
+
+## Economic Lexicon
+
+Within the package, we also provide access to the **Economic Lexicon (EL)**, a dictionary with a fine-grained score in [-1,+1] for 4,165 terms. 
+The EL is built with human-annotation and targets specifically economic applications.
+More details are provide in [Barbaglia et al. (2022)](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4106936).
+
+```{r EL}
+data("EL")
+EL
+```
+
+
+
 ## Citation:
 
 If you use this package, please *cite* the following references:

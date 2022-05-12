@@ -178,6 +178,33 @@ business cycles reference dates](https://www.nber.org/cycles.html).
 
 <img src="man/figures/README-US sentiment-1.png" width="80%" />
 
+## Economic Lexicon
+
+Within the package, we also provide access to the **Economic Lexicon
+(EL)**, a dictionary with a fine-grained score in \[-1,+1\] for 4,165
+terms. The EL is built with human-annotation and targets specifically
+economic applications. More details are provide in [Barbaglia et
+al. (2022)](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4106936).
+
+``` r
+data("EL")
+EL
+#> # A tibble: 4,165 x 3
+#>    token        sentiment polarity
+#>    <chr>            <dbl> <chr>   
+#>  1 abandon          -0.5  negative
+#>  2 abandonment      -0.6  negative
+#>  3 abdication       -0.25 negative
+#>  4 aberration       -0.45 negative
+#>  5 aberrational     -0.25 negative
+#>  6 abet             -0.35 negative
+#>  7 abeyance         -0.5  negative
+#>  8 abeyances        -0.3  negative
+#>  9 abide             0.2  positive
+#> 10 ability           0.1  positive
+#> # … with 4,155 more rows
+```
+
 ## Citation:
 
 If you use this package, please *cite* the following references:
