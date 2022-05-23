@@ -18,6 +18,9 @@ data(EL)
 \description{
 A data set containing the Economic Lexicon (EL) proposed by  \href{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4106936}{Barbaglia et al. (2022)}, a fine-grained dictionary for economic applications with scores in [-1;+1].
 }
+\references{
+Barbaglia, Luca and Consoli, Sergio and Manzan, Sebastiano and Tiozzo Pezzoli, Luca and Tosetti, Elisa, Sentiment Analysis of Economic Text: A Lexicon-based Approach (May 11, 2022). Available at SSRN: \url{https://ssrn.com/abstract=4106936}
+}
 \seealso{
 \code{\link{senti_bignomics}} to access the economic dictionary.
 

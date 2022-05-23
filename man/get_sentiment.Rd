@@ -56,8 +56,7 @@ my_sent
 
 }
 \references{
-Consoli, Barbaglia, Manzan (January 14, 2021). Fine-Grained  Aspect-Based Sentiment Analysis on Economic and Financial Lexicon. Available at SSRN: https://ssrn.com/abstract=3766194
-\url{https://ssrn.com/abstract=3766194}
+Consoli, Sergio, Luca Barbaglia, and Sebastiano Manzan. "Fine-grained, aspect-based sentiment analysis on economic and financial lexicon." Knowledge-Based Systems (2022): 108781. \url{https://doi.org/10.1016/j.knosys.2022.108781}
 }
 \seealso{
 \code{\link{figas_install}}

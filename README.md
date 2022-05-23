@@ -167,14 +167,17 @@ cbind(ecb_sent_comparison, ecb_sub) %>%
 
 ![](man/figures/README-OSS%20ECB%20Economic%20Bulletin-1.png)<!-- -->
 
-## US sentiment
+## Daily sentiment data
 
-The daily sentiment indicators used for the US used in [Barbaglia et
-al. (2022)](https://doi.org/10.1080/07350015.2022.2060988) can be
-accessed with the command `data("US_sentiment")`. The figure below plots
-the economic sentiment indicators, which timely identifies the
-recessionary period indicated by the shadowed area following the [NBER
-business cycles reference dates](https://www.nber.org/cycles.html).
+The daily sentiment indicators for the US by [Barbaglia et
+al. (2022)](https://doi.org/10.1080/07350015.2022.2060988) and for
+Europe by [Barbaglia et
+al. (2021)](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3898680)
+can be accessed with the command `data("sentiment")`. The figure below
+plots the economic sentiment indicators for the US, which timely
+identifies the recessionary period indicated by the shadowed area
+following the [NBER business cycles reference
+dates](https://www.nber.org/cycles.html).
 
 <img src="man/figures/README-US sentiment-1.png" width="80%" />
 
@@ -212,7 +215,7 @@ If you use this package, please *cite* the following references:
 <!-- ## References: -->
 
   - Barbaglia, Consoli, Manzan (2022). Forecasting with Economic News.
-    *Journal of Business and Economic Statistics*:
+    *Journal of Business & Economic Statistics*:
     <https://doi.org/10.1080/07350015.2022.2060988>
 
   - Consoli, Barbaglia, Manzan (2022). Fine-Grained Aspect-Based

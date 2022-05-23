@@ -13,6 +13,8 @@
 #'   \item{polarity}{A label (positive or negative) indicating the sign of the sentiment score.}
 #' }
 #'
+#' @references Barbaglia, Luca and Consoli, Sergio and Manzan, Sebastiano and Tiozzo Pezzoli, Luca and Tosetti, Elisa, Sentiment Analysis of Economic Text: A Lexicon-based Approach (May 11, 2022). Available at SSRN: \url{https://ssrn.com/abstract=4106936}
+#'
 #' @seealso \code{\link{senti_bignomics}} to access the economic dictionary.
 #'
 #'  @keywords datasets
