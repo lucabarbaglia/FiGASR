@@ -141,7 +141,7 @@ cbind(ecb_sent_comparison, ecb_sub) %>%
 ## Daily sentiment data
 
 
-The daily sentiment indicators for the US by [Barbaglia et al. (2022)](https://doi.org/10.1080/07350015.2022.2060988) and for Europe by [Barbaglia et al. (2021)](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3898680) can be accessed with the command `data("sentiment")`.
+The daily sentiment indicators for the US by [Barbaglia et al. (2023)](https://doi.org/10.1080/07350015.2022.2060988) and for Europe by [Barbaglia et al. (202X)](https://doi.org/10.1002/jae.3027) can be accessed with the command `data("sentiment")`.
 The figure below plots the economic sentiment indicators for the US, which timely identifies the recessionary period indicated by the shadowed area following the [NBER business cycles reference dates](https://www.nber.org/cycles.html).
 
 ```{r US sentiment, echo=FALSE, message=FALSE, warning=FALSE, out.width='80%'}
@@ -193,8 +193,10 @@ If you use this package, please *cite* the following references:
 
 <!-- ## References: -->
 
-* Barbaglia, Consoli, Manzan (2022). Forecasting with Economic News. *Journal of Business & Economic Statistics*: [https://doi.org/10.1080/07350015.2022.2060988](https://doi.org/10.1080/07350015.2022.2060988)
+* Barbaglia, Consoli, Manzan (202X). Forecasting GDP in Europe with Textual Data. *Journal of Applied Econometrics*: [https://doi.org/10.1002/jae.3027](https://doi.org/10.1002/jae.3027)
+
+* Barbaglia, Consoli, Manzan (2023). Forecasting with Economic News. *Journal of Business & Economic Statistics*: [https://doi.org/10.1080/07350015.2022.2060988](https://doi.org/10.1080/07350015.2022.2060988)
 
 * Consoli, Barbaglia, Manzan (2022). Fine-Grained  Aspect-Based Sentiment Analysis on Economic and Financial Lexicon. *Knowledge-Based Systems*: [https://doi.org/10.1016/j.knosys.2022.108781](https://doi.org/10.1016/j.knosys.2022.108781)
 
-* Barbaglia, Consoli, Manzan (September 1, 2021). Forecasting GDP in Europe with Textual Data. Available at SSRN: [https://ssrn.com/abstract=3898680](https://ssrn.com/abstract=3898680)
+
