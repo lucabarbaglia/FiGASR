@@ -12,7 +12,7 @@ Description: Compute fine-grained aspect-based sentiment analysis in R leveragin
 Depends: R (>= 3.5.0)
 Imports: 
     reticulate,
-    spacyr,
+    spacyr (== 1.2.1),
     stats,
     tibble
 License: GPL-3
